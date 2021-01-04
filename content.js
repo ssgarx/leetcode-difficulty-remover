@@ -13,9 +13,9 @@ for (var i = 0; i < elements.length; i++) {
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText1 = text.replace(/Easy/gi, '****');
-            var replacedText2 = text.replace(/Medium/gi, '****');
-            var replacedText3 = text.replace(/Hard/gi, '****');
+            var replacedText1 = text.replace(/Easy/gi, '');
+            var replacedText2 = text.replace(/Medium/gi, '');
+            var replacedText3 = text.replace(/Hard/gi, '');
 
             if (replacedText1 !== text) {
                 element.replaceChild(document.createTextNode(replacedText1), node);
